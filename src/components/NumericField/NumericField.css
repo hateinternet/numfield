@@ -1,0 +1,69 @@
+.numeric-field {
+    display: flex;
+    overflow: hidden;
+
+    border-radius: 4px;
+}
+
+.numeric-field__input {
+    flex-grow: 1;
+
+    min-width: 0;
+    padding: 4px;
+
+    transition: 100ms;
+    text-align: center;
+
+    border: none;
+    border-top: 1px solid rgba(172, 172, 172, 0.5);
+    border-bottom: 1px solid rgba(172, 172, 172, 0.5);
+    outline: none;
+
+    font-size: 20px;
+
+    -moz-appearance: textfield;
+}
+
+.numeric-field__input:focus {
+    border-color: rgba(172, 172, 172, 1);
+}
+
+.numeric-field__input::-webkit-outer-spin-button,
+.numeric-field__input::-webkit-inner-spin-button {
+    margin: 0;
+
+    -webkit-appearance: none;
+}
+
+.numeric-field__button {
+    flex-shrink: 0;
+
+    width: 30px;
+    margin: 0;
+    padding: 4px;
+
+    cursor: pointer;
+    transition: 200ms;
+
+    color: #ffffff;
+    border: none;
+    outline: none;
+    background-color: rgba(76, 188, 137, 0.8);
+}
+
+.numeric-field__button:-moz-focusring {
+    outline: none;
+}
+
+.numeric-field__button:hover,
+.numeric-field__button:focus {
+    background-color: rgba(76, 188, 137, 1);
+}
+
+.numeric-field__button:active {
+    background-color: rgb(49, 165, 112);
+}
+
+.numeric-field__button:disabled {
+    background-color: rgba(172, 172, 172, 0.5);
+}
